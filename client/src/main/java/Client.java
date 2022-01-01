@@ -13,6 +13,8 @@ public class Client {
 
     public static void main(String[] args) {
 
+        final String QUIT_COMMAND = "QUIT";
+
         Socket socket = null;
 
         InputStreamReader inputStreamReader = null;
@@ -51,8 +53,7 @@ public class Client {
 
                 System.out.println(bufferedReader.readLine());
 
-                if (messageToSend.equalsIgnoreCase("disconnect")) {
-
+                if (messageToSend.equalsIgnoreCase(QUIT_COMMAND)) {
 
                     System.out.println(" ");
                     System.out.println("Session ended.");
