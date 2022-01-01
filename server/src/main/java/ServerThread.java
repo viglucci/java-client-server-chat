@@ -53,7 +53,7 @@ class ServerThread extends Thread {
             log.error("client {} closed abruptly", this.getName(), e);
         } finally {
             try {
-                log.info("client closing: {}", socket.getRemoteSocketAddress());
+                log.info("client closing: {}, {}", this.getName(), socket.getRemoteSocketAddress());
 
                 if (inputStream != null) {
                     inputStream.close();
