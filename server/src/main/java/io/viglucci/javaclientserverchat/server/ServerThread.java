@@ -1,3 +1,5 @@
+package io.viglucci.javaclientserverchat.server;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
